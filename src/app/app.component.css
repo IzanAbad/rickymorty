@@ -1,0 +1,51 @@
+*{
+  font-family:fantasy;
+}
+.container{
+
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align:center;
+
+}
+li{
+  list-style:none;
+margin-left:25px;
+margin-right:35px;
+
+}
+ul{
+  display:flex;
+}
+.derecha{
+
+
+  float:right
+
+}
+.izquierda{
+
+  margin-left:35px;
+  float:left
+
+}
+.container0{
+  height:70px;
+  background-color:black;
+  color:white;
+}
+.mas{
+  background-color:orange;
+  border:solid;
+  border-radius:5px;
+
+}
+.container div{
+margin:15px;
+}
+.mas:hover{
+  background-color:lightsalmon;
+  color:white;
+  border-color:black;
+
+}

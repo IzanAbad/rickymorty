@@ -1,0 +1,34 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
+<div class="container0">
+  <div class="izquierda">
+    <h2>Rick & Morty</h2>
+
+  </div>
+  <div class="derecha">
+    <ul>
+      <li>Home</li>
+      <li>Characters</li>
+      <li>About</li>
+    </ul>
+
+  </div>
+</div>
+<div class="container"*ngIf="personajes!=null; else espera">
+
+    <div class="elemento"*ngFor="let pj of personajes.results">
+      <p><img src="{{pj.image}}"></p>
+      <p>{{pj.name}}</p>
+      <div class="mas"><p>See more</p></div>
+    </div>
+
+</div>
+<ng-template #espera>Esperando datos...</ng-template>
